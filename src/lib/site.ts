@@ -1,7 +1,5 @@
 // Used for canonicals, social images, the sitemap and structured data.
-// www.acnorth.co.uk does not resolve yet, so cards were pointing at a snapshot that never loaded.
-// Switch this to the custom domain once it serves the site.
-export const SITE_URL = "https://ac-north.vercel.app";
+export const SITE_URL = "https://www.acnorth.co.uk";
 
 export const SITE_NAME = "AC North";
 
