@@ -21,8 +21,8 @@ export default function Faq() {
       />
 
       <section className="border-b border-rule">
-        <div className="wrap py-14 md:py-20">
-          <div className="max-w-3xl border-t border-ink">
+        <div className="wrap grid py-14 md:grid-cols-12 md:gap-10 md:py-20">
+          <div className="border-t border-ink md:col-span-8 md:col-start-5">
             {faqs.map((f) => (
               <details key={f.question} className="group border-b border-rule">
                 <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-semibold tracking-[-0.01em] hover:text-accent [&::-webkit-details-marker]:hidden">
