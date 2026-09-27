@@ -32,7 +32,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-GB" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en-GB" className={`${inter.variable} h-full`}>
       <body className="flex min-h-full flex-col">
         <a
           href="#main"

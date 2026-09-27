@@ -10,6 +10,8 @@
   --color-accent-deep: #2c4351;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  /* Headings sit a step above the heavier body text. */
+  --font-weight-semibold: 650;
 }
 
 html {
@@ -23,6 +25,8 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
   font-feature-settings: "cv11";
+  /* Inter is variable: body text at 500 reads less thin than the default 400. */
+  font-weight: 500;
 }
 
 ::selection {
