@@ -58,9 +58,8 @@ export default function WhoWeWorkWith() {
         <NumberedList
           items={[
             "Access to your website, or to whoever manages it.",
-            "Access to your Google Business Profile, Search Console and Analytics. We can set these up if you do not have them.",
-            "A short conversation about your services, customers and the areas you cover.",
-            "Approval for any change to how your site looks or what it says about your business.",
+            "Access to your Google Business Profile. We can set one up if you do not have one.",
+            "A short conversation about your services and customers.",
           ]}
         />
       </Section>

@@ -21,28 +21,24 @@ export default function Faq() {
       />
 
       <section className="border-b border-rule">
-        <div className="wrap grid py-14 md:grid-cols-12 md:py-20">
-          <div className="md:col-span-8 md:col-start-5">
-            <div className="border-t border-ink">
-              {faqs.map((f) => (
-                <details key={f.question} className="group border-b border-rule">
-                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-semibold tracking-[-0.01em] hover:text-accent [&::-webkit-details-marker]:hidden">
-                    {f.question}
-                    <span
-                      aria-hidden="true"
-                      className="mt-1 shrink-0 font-normal text-muted transition-transform group-open:rotate-45"
-                    >
-                      +
-                    </span>
-                  </summary>
-                  <div className="max-w-[60ch] space-y-4 pb-6 leading-relaxed text-muted">
-                    {f.answer.map((a) => (
-                      <p key={a}>{a}</p>
-                    ))}
-                  </div>
-                </details>
-              ))}
-            </div>
+        <div className="wrap py-14 md:py-20">
+          <div className="max-w-3xl border-t border-ink">
+            {faqs.map((f) => (
+              <details key={f.question} className="group border-b border-rule">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-lg font-semibold tracking-[-0.01em] hover:text-accent [&::-webkit-details-marker]:hidden">
+                  <span>{f.question}</span>
+                  <span aria-hidden="true" className="w-4 shrink-0 text-center font-normal text-muted">
+                    <span className="group-open:hidden">+</span>
+                    <span className="hidden group-open:inline">−</span>
+                  </span>
+                </summary>
+                <div className="max-w-[60ch] space-y-4 pb-6 leading-relaxed text-muted">
+                  {f.answer.map((a) => (
+                    <p key={a}>{a}</p>
+                  ))}
+                </div>
+              </details>
+            ))}
           </div>
         </div>
       </section>

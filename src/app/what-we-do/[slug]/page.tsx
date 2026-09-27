@@ -22,7 +22,6 @@ export async function generateMetadata(props: PageProps<"/what-we-do/[slug]">): 
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: { canonical: `/what-we-do/${service.slug}` },
-    openGraph: { url: `/what-we-do/${service.slug}` },
   };
 }
 

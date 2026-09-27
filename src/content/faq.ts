@@ -4,7 +4,7 @@ export const faqs: Faq[] = [
   {
     question: "What is SEO?",
     answer: [
-      "SEO stands for search engine optimisation. It is the work of improving your website and your presence online so that Google shows your business higher in its results when people search for what you offer.",
+      "SEO stands for search engine optimisation. It is the work of improving your presence online so that Google shows your business higher in its results when people search for what you offer.",
     ],
   },
   {
@@ -16,7 +16,7 @@ export const faqs: Faq[] = [
   {
     question: "Why is SEO ongoing?",
     answer: [
-      "Google's results keep changing, and your competitors keep working on their own sites. The monthly work keeps you in the top 3.",
+      "Google's results keep changing, and your competitors keep working on their own ranking. The monthly work keeps you in the top 3.",
       "Rankings also build over time. Each month adds content, links and improvements that make your position more secure.",
     ],
   },
@@ -36,19 +36,19 @@ export const faqs: Faq[] = [
   {
     question: "Do I need a new website?",
     answer: [
-      "Usually not. Most sites can be fixed and improved as they are. If something about your current site makes ranking impractical, the audit will say so and explain why.",
+      "No. Sites can be fixed and improved as they are. If something about your current site makes ranking impractical, the audit will say so and explain why.",
     ],
   },
   {
     question: "What do you need from me?",
     answer: [
-      "Access to your website, your Google Business Profile, Google Search Console and Google Analytics, and a short conversation about your services and customers. We handle the rest.",
+      "Access to your website, Google Business Profile and a short conversation about your services and customers. We handle the rest.",
     ],
   },
   {
     question: "Will you make changes to my website?",
     answer: [
-      "Yes. Most of the work involves changes to page titles, content, links and technical settings. Anything that changes how your site looks or what it says about your business is agreed with you first.",
+      "Negligible. Most of the work involves changes to page titles, content, links and technical settings. Nothing will be changed about how your site looks or what it says about your business.",
     ],
   },
   {
