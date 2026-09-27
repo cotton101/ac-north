@@ -20,8 +20,8 @@ export default async function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: 80,
-          background: "#FFFFFF",
-          color: "#0A1A33",
+          background: "#F7F6F3",
+          color: "#1C1C1A",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 20, fontSize: 36, fontWeight: 600 }}>
@@ -33,15 +33,11 @@ export default async function OpengraphImage() {
           <div style={{ fontSize: 88, fontWeight: 600, letterSpacing: -3, lineHeight: 1.05 }}>
             Top 3 on Google in one week.
           </div>
-          <div style={{ marginTop: 28, fontSize: 32, color: "#4F5D73" }}>
+          <div style={{ marginTop: 28, fontSize: 32, color: "#5E5E59" }}>
             Local SEO, maintained every month.
           </div>
         </div>
-        <div style={{ display: "flex", gap: 8 }}>
-          <div style={{ height: 4, width: 80, background: "#012D6E" }} />
-          <div style={{ height: 4, width: 80, background: "#016BE2" }} />
-          <div style={{ height: 4, width: 80, background: "#47B1FB" }} />
-        </div>
+        <div style={{ height: 2, background: "#3E5A6B", width: 160 }} />
       </div>
     ),
     size,
