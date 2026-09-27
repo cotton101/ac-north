@@ -4,7 +4,7 @@ export const SITE_URL = "https://www.acnorth.co.uk";
 export const SITE_NAME = "AC North";
 
 export const SITE_DESCRIPTION =
-  "AC North does search engine optimisation for businesses. We get you into the top 3 Google results for your agreed search terms within a week, then keep working on it every month.";
+  "AC North does local SEO. We get your business into the top 3 on Google Maps and local search for your agreed search terms within a week, then keep working on it every month.";
 
 export const NAV = [
   { href: "/what-we-do", label: "What we do" },

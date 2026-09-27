@@ -52,11 +52,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 url: SITE_URL,
                 description: SITE_DESCRIPTION,
                 knowsAbout: [
-                  "Search engine optimisation",
-                  "Technical SEO",
                   "Local SEO",
-                  "Content marketing",
-                  "Link building",
+                  "Google Business Profile optimisation",
+                  "Local citations",
+                  "On-page SEO",
                 ],
               },
               {

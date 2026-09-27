@@ -6,43 +6,60 @@ import NextPage from "@/components/NextPage";
 export const metadata: Metadata = {
   title: "How we work",
   description:
-    "How AC North works: a one-week setup that puts you in the top 3 on Google for your agreed search terms, followed by ongoing monthly SEO work and reporting.",
+    "How AC North works: a one-week setup covering your Google Business Profile, website and citations, then weekly work and an update every Friday.",
   alternates: { canonical: "/how-we-work" },
 };
 
 const WEEK_ONE = [
   {
     when: "Day 1",
-    title: "Agree the search terms",
-    body: "We agree the searches you want to appear for, based on your services, your area and what your customers type into Google. We also get access to your website and Google accounts.",
+    title: "Access and search term",
+    body: "You give us access to your Google Business Profile and your website. We agree your main search term, usually your trade and your town.",
   },
   {
     when: "Days 1–2",
-    title: "Audit",
-    body: "A full check of your site, your pages, your links and your Google Business Profile, with your current positions recorded as a baseline.",
+    title: "Benchmark",
+    body: "We record where you rank from points across your area, and compare your profile with the top 10 businesses for your search.",
   },
   {
-    when: "Days 2–4",
-    title: "Fix and update",
-    body: "Technical problems are fixed. Page titles, headings and content are updated so each page clearly matches its search term.",
+    when: "Days 2–3",
+    title: "Google Business Profile",
+    body: "Categories set, every section completed, a full list of your services added with descriptions, and questions and answers added.",
+  },
+  {
+    when: "Days 3–4",
+    title: "Website",
+    body: "Page title and headings rewritten to name your trade and your town. Your business details, a map and structured data added.",
   },
   {
     when: "Days 4–5",
-    title: "Local presence",
-    body: "Your Google Business Profile is completed, your business details are corrected across listings, and new pages are submitted to Google.",
+    title: "Citations",
+    body: "Your listings on Apple Maps, Bing, Yelp and Foursquare set up or corrected, so your details match everywhere.",
   },
   {
     when: "End of week",
     title: "Top 3",
-    body: "You are in the top 3 for your agreed search terms. You get a short summary of your positions and what was done.",
+    body: "You are in the top 3 for your agreed search terms. Your first Friday update sets out what was done.",
   },
 ];
 
 const MONTHLY = [
-  { title: "Content", body: "New and improved pages based on what your customers are searching for." },
-  { title: "Links", body: "Links from relevant, reputable sites, and new local listings." },
-  { title: "Monitoring", body: "Rankings and site health checked, and new issues fixed as they appear." },
-  { title: "Reporting", body: "A monthly report: your positions, what changed, what we did and what's next." },
+  {
+    title: "Google Business Profile",
+    body: "Posts and photos every week, and help getting a steady flow of reviews.",
+  },
+  {
+    title: "Service and area pages",
+    body: "New pages that show Google what you do and where you do it, linked together.",
+  },
+  {
+    title: "Citations",
+    body: "New listings each week on the directories and local sites that matter for your trade.",
+  },
+  {
+    title: "Updates",
+    body: "A short update every Friday and a ranking map every month, compared with where you started.",
+  },
 ];
 
 export default function HowWeWork() {
@@ -82,11 +99,12 @@ export default function HowWeWork() {
       <Section title="Why the work is ongoing">
         <div className="max-w-[65ch] space-y-5 text-[1.0625rem] leading-[1.7]">
           <p>
-            Google changes how it ranks pages many times a year. Your competitors keep working on
-            their own sites. A position that is left alone tends to slip.
+            Your competitors keep working on their own profiles. Google also looks for signs that a
+            business is active: new reviews, posts and photos. A position that is left alone tends
+            to slip.
           </p>
           <p>
-            The monthly work keeps you in the top 3, and each month adds content, links and
+            The monthly work keeps you in the top 3, and each month adds pages, listings and
             improvements that make your position more secure and extend it to more searches.
           </p>
         </div>

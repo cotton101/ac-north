@@ -7,7 +7,7 @@ import NextPage from "@/components/NextPage";
 export const metadata: Metadata = {
   title: "FAQ",
   description:
-    "Answers to common questions about SEO and AC North: how quickly you will rank, why SEO is ongoing, SEO versus paid ads, and what we need from you.",
+    "Answers to common questions about local SEO and AC North: how quickly you will rank, Google Business Profiles, where you can rank and what we need from you.",
   alternates: { canonical: "/faq" },
 };
 
@@ -17,7 +17,7 @@ export default function Faq() {
       <PageHeader
         crumbs={[{ href: "/faq", label: "FAQ" }]}
         title="Frequently asked questions"
-        lead="Plain answers about SEO and how we work."
+        lead="Plain answers about local SEO and how we work."
       />
 
       <section className="border-b border-rule">
@@ -43,7 +43,7 @@ export default function Faq() {
         </div>
       </section>
 
-      <NextPage href="/what-we-do" label="What we do" note="The seven areas of SEO we work on." />
+      <NextPage href="/what-we-do" label="What we do" note="The three things Google looks at, and the work we do on each." />
 
       <JsonLd
         data={{

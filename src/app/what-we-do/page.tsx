@@ -9,9 +9,27 @@ import NextPage from "@/components/NextPage";
 export const metadata: Metadata = {
   title: "What we do",
   description:
-    "AC North's SEO services: technical SEO, on-page SEO, content, local SEO, links and authority, SEO audits and monthly reporting.",
+    "AC North does local SEO: benchmarking, Google Business Profile, website SEO, service and area pages, citations and weekly updates.",
   alternates: { canonical: "/what-we-do" },
 };
+
+const PILLARS = [
+  {
+    title: "Your Google Business Profile",
+    body: "Your listing on Google Maps. Its categories, services, reviews and photos carry the most weight.",
+    href: "/what-we-do/google-business-profile",
+  },
+  {
+    title: "Your website",
+    body: "Google checks your site to confirm what you do and where. The page title, headings and business details matter most.",
+    href: "/what-we-do/website-seo",
+  },
+  {
+    title: "Citations",
+    body: "Listings of your business on other trusted sites, such as Apple Maps, Bing and trade directories, with the same details everywhere.",
+    href: "/what-we-do/citations",
+  },
+];
 
 export default function WhatWeDo() {
   return (
@@ -19,33 +37,55 @@ export default function WhatWeDo() {
       <PageHeader
         crumbs={[{ href: "/what-we-do", label: "What we do" }]}
         title="What we do"
-        lead="We improve your website and your presence online so Google ranks you in the top 3 for the searches your customers make."
+        lead="We do local SEO. We get your business into the top 3 on Google when people near you search for what you offer."
       />
 
-      <Section title="How Google decides what to show">
+      <Section title="How Google ranks local businesses">
         <div className="grid gap-10 lg:grid-cols-8">
-          <div className="space-y-5 text-[1.0625rem] leading-[1.7] lg:col-span-5">
-            <p>
-              When someone searches, Google looks through the pages it knows about and ranks them.
-              It considers whether a page answers the search, whether the site works properly, how
-              trusted the site is by others, and, for local searches, where the business is.
-            </p>
-            <p>
-              Most people choose from the first few results. Paid ads sit above them, but the top
-              3 normal results receive most of the clicks.
-            </p>
-            <p>
-              SEO works on each of the things Google considers. The seven areas below cover them
-              all.
+          <div className="lg:col-span-5">
+            <div className="space-y-5 text-[1.0625rem] leading-[1.7]">
+              <p>
+                When someone searches for a service near them, Google shows a map with three
+                businesses above the normal results. Those top 3 businesses get around 70% of the
+                traffic.
+              </p>
+              <p>
+                Google picks them based on how close each business is to the person searching, and on
+                three things we can work on:
+              </p>
+            </div>
+            <ol className="mt-8 border-t border-ink">
+              {PILLARS.map((p, i) => (
+                <li key={p.title} className="border-b border-rule">
+                  <Link href={p.href} className="group grid grid-cols-[2.5rem_1fr] gap-2 py-5">
+                    <span className="pt-1 font-mono text-[0.8125rem] text-accent tabular-nums">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span>
+                      <span className="block text-lg font-semibold tracking-[-0.01em] group-hover:text-accent">
+                        {p.title}
+                      </span>
+                      <span className="mt-1 block leading-relaxed text-muted">{p.body}</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-8 text-[1.0625rem] leading-[1.7]">
+              Most local businesses leave gaps in all three. Google rewards complete, accurate
+              information, so filling those gaps is what moves you up.
             </p>
           </div>
           <ResultsDiagram className="max-w-xs lg:col-span-3" />
         </div>
       </Section>
 
-      <section className="border-b border-rule" aria-label="Services">
+      <section className="border-b border-rule" aria-labelledby="services-title">
         <div className="wrap py-14 md:py-20">
-          <ul className="grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
+          <h2 id="services-title" className="text-[1.375rem] font-semibold tracking-[-0.015em]">
+            The work
+          </h2>
+          <ul className="mt-8 grid gap-px border border-rule bg-rule sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s, i) => (
               <li key={s.slug} className="bg-paper">
                 <Link

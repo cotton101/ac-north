@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="md:col-span-5">
           <Logo inverted />
           <p className="mt-4 max-w-xs text-[0.9375rem] leading-relaxed text-paper/65">
-            Search engine optimisation. Top 3 on Google in one week, maintained every month.
+            Local SEO. Top 3 on Google in one week, maintained every month.
           </p>
         </div>
 

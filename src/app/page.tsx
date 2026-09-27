@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const AUDIENCES = [
-  "Local service businesses",
-  "Professional services",
-  "Online shops",
-  "Businesses with more than one location",
+  "Trades and home services",
+  "Tree surgeons, landscapers and cleaners",
+  "Clinics and practices",
+  "Weddings, catering and events",
 ];
 
 export default function Home() {
@@ -20,13 +20,13 @@ export default function Home() {
       <section className="border-b border-rule">
         <div className="wrap grid items-center gap-12 py-16 md:grid-cols-12 md:py-24">
           <div className="md:col-span-7">
-            <p className="eyebrow">Search engine optimisation</p>
+            <p className="eyebrow">Local SEO</p>
             <h1 className="mt-5 text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.035em] sm:text-6xl lg:text-7xl">
               Top 3 on Google in one week.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-              We get your business into the top 3 Google results for your agreed search terms
-              within a week. After that, we keep you there with ongoing monthly work.
+              We get your business into the top 3 on Google Maps and local search for your agreed
+              search terms within a week. After that, we keep you there with ongoing monthly work.
             </p>
             <div className="mt-9 flex flex-wrap gap-x-8 gap-y-3 text-[0.9375rem]">
               <Link href="/what-we-do" className="text-link">
@@ -48,8 +48,9 @@ export default function Home() {
               What we do
             </h2>
             <p className="max-w-xl text-lg leading-relaxed text-muted md:col-span-8">
-              SEO is the work of improving your website and your presence online so Google ranks
-              you higher. It covers seven areas.
+              The top 3 businesses on Google get around 70% of the traffic. Google ranks local
+              businesses on three things: your Google Business Profile, your website and your
+              listings on other sites. We work on all three.
             </p>
           </div>
 
@@ -92,17 +93,17 @@ export default function Home() {
               <p className="eyebrow">Week one</p>
               <p className="mt-3 text-xl font-semibold tracking-[-0.015em]">Setup</p>
               <p className="mt-3 leading-relaxed text-muted">
-                We audit your site, fix what is holding it back, update your pages and set up your
-                Google Business Profile. By the end of the week you are in the top 3 for your agreed
-                search terms.
+                We measure where you rank, complete your Google Business Profile, fix your website
+                and correct your listings on other sites. By the end of the week you are in the top 3
+                for your agreed search terms.
               </p>
             </div>
             <div className="border-t border-ink pt-5">
               <p className="eyebrow">Every month after</p>
               <p className="mt-3 text-xl font-semibold tracking-[-0.015em]">Ongoing work</p>
               <p className="mt-3 leading-relaxed text-muted">
-                New content, links, monitoring and fixes to keep you in the top 3 and extend your
-                rankings to more searches. You get a report every month.
+                Weekly posts and photos on your profile, new pages and listings, and an update every
+                Friday. It keeps you in the top 3 and extends your rankings to more searches.
               </p>
             </div>
           </div>
@@ -121,7 +122,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-8">
             <p className="max-w-xl text-lg leading-relaxed text-muted">
-              Any business whose customers search for it on Google. Most of our work is with:
+              Local businesses whose customers search for them on Google. Most of our work is with:
             </p>
             <ul className="mt-8 grid border-t border-rule sm:grid-cols-2">
               {AUDIENCES.map((a) => (

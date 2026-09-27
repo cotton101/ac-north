@@ -28,7 +28,7 @@ export default function TwitterImage() {
             Top 3 on Google in one week.
           </div>
           <div style={{ marginTop: 28, fontSize: 32, color: "#5E5E59" }}>
-            Search engine optimisation, maintained every month.
+            Local SEO, maintained every month.
           </div>
         </div>
         <div style={{ height: 2, background: "#3E5A6B", width: 160 }} />

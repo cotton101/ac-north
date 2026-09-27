@@ -6,6 +6,7 @@ import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import NumberedList from "@/components/NumberedList";
 import JsonLd from "@/components/JsonLd";
+import HeatmapDiagram from "@/components/HeatmapDiagram";
 import { SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -48,6 +49,12 @@ export default async function ServicePage(props: PageProps<"/what-we-do/[slug]">
       <Section title="What it is">
         <p className="max-w-[65ch] text-[1.0625rem] leading-[1.7]">{service.intro}</p>
       </Section>
+
+      {service.diagram === "heatmap" && (
+        <Section title="What a ranking map shows">
+          <HeatmapDiagram />
+        </Section>
+      )}
 
       <Section title="Why it matters">
         <ul className="max-w-[65ch] space-y-4 text-[1.0625rem] leading-[1.7]">
