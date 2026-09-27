@@ -3,13 +3,15 @@ import { faqs } from "@/content/faq";
 import PageHeader from "@/components/PageHeader";
 import JsonLd from "@/components/JsonLd";
 import NextPage from "@/components/NextPage";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "FAQ",
   description:
     "Answers to common questions about local SEO and AC North: how quickly you will rank, Google Business Profiles, where you can rank and what we need from you.",
-  alternates: { canonical: "/faq" },
-};
+  path: "/faq",
+  image: "/og/faq.jpg",
+});
 
 export default function Faq() {
   return (

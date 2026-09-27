@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { services } from "@/content/services";
 import ResultsDiagram from "@/components/ResultsDiagram";
+import { pageMeta } from "@/lib/metadata";
+import { SITE_DESCRIPTION } from "@/lib/site";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
+export const metadata: Metadata = pageMeta({
+  title: { absolute: "AC North — Top 3 on Google in one week" },
+  description: SITE_DESCRIPTION,
+  path: "/",
+  image: "/og/home.jpg",
+});
 
 const AUDIENCES = [
   "Trades and home services",

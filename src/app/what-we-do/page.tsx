@@ -5,13 +5,15 @@ import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import ResultsDiagram from "@/components/ResultsDiagram";
 import NextPage from "@/components/NextPage";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "What we do",
   description:
     "AC North does local SEO: benchmarking, Google Business Profile, website SEO, service and area pages, citations and weekly updates.",
-  alternates: { canonical: "/what-we-do" },
-};
+  path: "/what-we-do",
+  image: "/og/what-we-do.jpg",
+});
 
 const PILLARS = [
   {

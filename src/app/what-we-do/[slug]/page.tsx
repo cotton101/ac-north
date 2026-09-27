@@ -7,6 +7,7 @@ import Section from "@/components/Section";
 import NumberedList from "@/components/NumberedList";
 import JsonLd from "@/components/JsonLd";
 import HeatmapDiagram from "@/components/HeatmapDiagram";
+import { pageMeta } from "@/lib/metadata";
 import { SITE_URL } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -19,11 +20,12 @@ export async function generateMetadata(props: PageProps<"/what-we-do/[slug]">): 
   const { slug } = await props.params;
   const service = getService(slug);
   if (!service) return {};
-  return {
+  return pageMeta({
     title: service.metaTitle,
     description: service.metaDescription,
-    alternates: { canonical: `/what-we-do/${service.slug}` },
-  };
+    path: `/what-we-do/${service.slug}`,
+    image: `/og/${service.slug}.jpg`,
+  });
 }
 
 export default async function ServicePage(props: PageProps<"/what-we-do/[slug]">) {

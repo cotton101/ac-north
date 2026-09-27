@@ -18,6 +18,16 @@ export const metadata: Metadata = {
     template: "%s | AC North",
   },
   description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
@@ -55,6 +65,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 name: SITE_NAME,
                 url: SITE_URL,
                 description: SITE_DESCRIPTION,
+                logo: `${SITE_URL}/ac-north-logo.png`,
+                image: `${SITE_URL}/og/home.jpg`,
                 knowsAbout: [
                   "Local SEO",
                   "Google Business Profile optimisation",

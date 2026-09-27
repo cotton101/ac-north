@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import NextPage from "@/components/NextPage";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "About",
   description:
     "About AC North: a local SEO company that follows Google's rules, fixes the basics first, completes what others leave out and sends an update every Friday.",
-  alternates: { canonical: "/about" },
-};
+  path: "/about",
+  image: "/og/about.jpg",
+});
 
 const PRINCIPLES = [
   {

@@ -3,13 +3,15 @@ import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import NumberedList from "@/components/NumberedList";
 import NextPage from "@/components/NextPage";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "Who we work with",
   description:
     "AC North works with local businesses: trades and home services, tree surgeons, landscapers and cleaners, clinics and practices, and wedding and event businesses.",
-  alternates: { canonical: "/who-we-work-with" },
-};
+  path: "/who-we-work-with",
+  image: "/og/who-we-work-with.jpg",
+});
 
 const TYPES = [
   {

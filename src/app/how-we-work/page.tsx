@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import Section from "@/components/Section";
 import NextPage from "@/components/NextPage";
+import { pageMeta } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMeta({
   title: "How we work",
   description:
     "How AC North works: a one-week setup covering your Google Business Profile, website and citations, then weekly work and an update every Friday.",
-  alternates: { canonical: "/how-we-work" },
-};
+  path: "/how-we-work",
+  image: "/og/how-we-work.jpg",
+});
 
 const WEEK_ONE = [
   {
