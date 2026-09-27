@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #f7f6f3;
-  --color-stone: #edebe6;
-  --color-ink: #1c1c1a;
-  --color-muted: #5e5e59;
-  --color-rule: #d9d6cf;
-  --color-accent: #3e5a6b;
-  --color-accent-deep: #2c4351;
+  /* Taken from the logo: sky #47b1fb, blue #016be2, navy #012d6e. */
+  --color-paper: #ffffff;
+  --color-stone: #f3f7fc;
+  --color-ink: #0a1a33;
+  --color-muted: #4f5d73;
+  --color-rule: #dde5ef;
+  --color-accent: #016be2;
+  --color-accent-deep: #012d6e;
+  --color-sky: #47b1fb;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }

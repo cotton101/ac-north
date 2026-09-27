@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     locale: "en_GB",
   },
   twitter: { card: "summary_large_image" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

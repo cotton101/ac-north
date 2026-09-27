@@ -1,23 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export default function Logo({ inverted = false }: { inverted?: boolean }) {
+export default function Logo() {
   return (
     <Link
       href="/"
-      className={`inline-flex items-center gap-2.5 text-[1.0625rem] font-semibold tracking-[-0.01em] ${
-        inverted ? "text-paper" : "text-ink"
-      }`}
+      className="inline-flex items-center gap-2.5 text-[1.0625rem] font-semibold tracking-[-0.01em] text-ink"
     >
-      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
-        <rect width="18" height="18" rx="2" className={inverted ? "fill-paper" : "fill-accent"} />
-        <path
-          d="M5 12.5 L9 5 L13 12.5"
-          fill="none"
-          strokeWidth="1.6"
-          strokeLinecap="square"
-          className={inverted ? "stroke-ink" : "stroke-paper"}
-        />
-      </svg>
+      <Image src="/logo-mark.png" alt="" width={30} height={30} priority className="h-[30px] w-[30px]" />
       AC North
     </Link>
   );

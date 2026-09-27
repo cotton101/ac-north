@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="relative border-b border-rule bg-paper">
+    <header className="sticky top-0 z-40 border-b border-rule bg-paper">
       <div className="wrap flex h-16 items-center justify-between">
         <Logo />
 

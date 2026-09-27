@@ -26,7 +26,7 @@ const AIM = [
 function band(value: string) {
   const n = value === "20+" ? 21 : Number(value);
   if (n <= 3) return { circle: "fill-accent", text: "fill-paper" };
-  if (n <= 10) return { circle: "fill-accent/45", text: "fill-ink" };
+  if (n <= 10) return { circle: "fill-sky", text: "fill-ink" };
   return { circle: "fill-rule", text: "fill-muted" };
 }
 
@@ -71,7 +71,7 @@ function Grid({ data, label }: { data: string[][]; label: string }) {
 export default function HeatmapDiagram() {
   return (
     <figure>
-      <div className="grid max-w-xl grid-cols-2 gap-5 sm:gap-8">
+      <div className="grid max-w-xl gap-8 min-[480px]:grid-cols-2 min-[480px]:gap-5 sm:gap-8">
         <Grid data={START} label="At the start" />
         <Grid data={AIM} label="The aim" />
       </div>
@@ -83,7 +83,7 @@ export default function HeatmapDiagram() {
             <span className="inline-block h-3 w-3 rounded-full bg-accent" /> Top 3
           </span>
           <span className="flex items-center gap-2">
-            <span className="inline-block h-3 w-3 rounded-full bg-accent/45" /> 4 to 10
+            <span className="inline-block h-3 w-3 rounded-full bg-sky" /> 4 to 10
           </span>
           <span className="flex items-center gap-2">
             <span className="inline-block h-3 w-3 rounded-full bg-rule" /> 11 or lower

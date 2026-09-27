@@ -30,7 +30,7 @@ export default function ResultsDiagram({ className = "" }: { className?: string 
         <rect x="66" y="38" width="120" height="6" rx="3" className="fill-rule" />
 
         {/* Map */}
-        <rect x="24" y="74" width="352" height="124" rx="2" className="fill-stone" />
+        <rect x="24" y="74" width="352" height="124" rx="2" className="fill-sky/15" />
         <path d="M24 150 C 120 140, 200 186, 376 170" className="fill-none stroke-paper" strokeWidth="7" />
         <path d="M170 74 C 180 130, 150 160, 160 198" className="fill-none stroke-paper" strokeWidth="5" />
         <path d="M260 74 L 290 198" className="fill-none stroke-paper" strokeWidth="4" />
@@ -60,7 +60,7 @@ export default function ResultsDiagram({ className = "" }: { className?: string 
               </text>
               <rect x="46" y={y} width={170 - i * 16} height="7" rx="3.5" className="fill-accent" />
               {[0, 1, 2, 3, 4].map((s) => (
-                <circle key={s} cx={49 + s * 9} cy={y + 18} r="2.6" className="fill-accent/55" />
+                <circle key={s} cx={49 + s * 9} cy={y + 18} r="2.6" className="fill-sky" />
               ))}
               <rect x="96" y={y + 15.5} width="150" height="5" rx="2.5" className="fill-muted/40" />
             </g>
