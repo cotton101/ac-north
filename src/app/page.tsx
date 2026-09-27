@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <section className="border-b border-rule">
-        <div className="wrap grid items-center gap-12 py-16 md:grid-cols-12 md:py-24">
+        <div className="wrap grid items-start gap-12 py-16 md:grid-cols-12 md:py-24">
           <div className="md:col-span-7">
             <p className="eyebrow">Local SEO</p>
             <h1 className="mt-5 text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.035em] sm:text-6xl lg:text-7xl">
