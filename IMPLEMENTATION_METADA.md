@@ -1,6 +1,6 @@
 # Implementation plan: metadata and social previews
 
-No site code in this step. This plan is the work to do next.
+Implemented. This note is what was built.
 
 ## Goal
 
